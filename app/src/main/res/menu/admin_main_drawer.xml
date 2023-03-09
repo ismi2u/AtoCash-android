@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_icon_projects"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_icon_report"
+            android:title="@string/menu_report" />
+        <item
+            android:id="@+id/nav_cost_center"
+            android:icon="@drawable/ic_icon_cost_center"
+            android:title="@string/menu_cost_center" />
+        <item
+            android:id="@+id/nav_department"
+            android:icon="@drawable/ic_icon_department"
+            android:title="@string/menu_department" />
+        <item
+            android:id="@+id/nav_roles"
+            android:icon="@drawable/ic_icon_job_roles"
+            android:title="@string/menu_roles" />
+        <item
+            android:id="@+id/nav_employee_type"
+            android:icon="@drawable/ic_icon_employment_types"
+            android:title="@string/menu_employee_type" />
+        <item
+            android:id="@+id/nav_expense_type"
+            android:icon="@drawable/ic_icon_expense_types"
+            android:title="@string/menu_expense_type" />
+        <item
+            android:id="@+id/nav_approval_strategy"
+            android:icon="@drawable/ic_icon_approval"
+            android:title="@string/menu_approval_strategy" />
+        <item
+            android:id="@+id/nav_employee"
+            android:icon="@drawable/ic_icon_employees"
+            android:title="@string/menu_employee" />
+        <item
+            android:id="@+id/nav_project"
+            android:icon="@drawable/ic_icon_projects"
+            android:title="@string/menu_project" />
+        <item
+            android:id="@+id/nav_sub_project"
+            android:icon="@drawable/ic_icon_sub_projects"
+            android:title="@string/menu_sub_project" />
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/ic_icon_tasks"
+            android:title="@string/menu_task" />
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/ic_icon_users"
+            android:title="@string/menu_users" />
+        <item
+            android:id="@+id/nav_user_roles"
+            android:icon="@drawable/ic_icon_user_roles"
+            android:title="@string/menu_user_roles" />
+        <item
+            android:id="@+id/nav_currency"
+            android:icon="@drawable/ic_icon_approval"
+            android:title="@string/menu_currency" />
+        <item
+            android:id="@+id/nav_assign_roles"
+            android:icon="@drawable/ic_icon_assign_roles"
+            android:title="@string/menu_assign_roles" />
+        <item
+            android:id="@+id/nav_assign_project"
+            android:icon="@drawable/ic_icon_assign_roles"
+            android:title="@string/menu_assign_project" />
+        <!--<item
+            android:id="@+id/nav_reset_password"
+            android:icon="@drawable/ic_icon_logout"
+            android:title="@string/menu_reset_password" />-->
+    </group>
+</menu>

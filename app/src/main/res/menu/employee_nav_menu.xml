@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_icon_dashboard"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_expense"
+        android:icon="@drawable/ic_icon_expense_reimbursement"
+        android:title="@string/title_expense" />
+
+    <item
+        android:id="@+id/navigation_advance"
+        android:icon="@drawable/ic_icon_cash_advance_status"
+        android:title="@string/title_advance" />
+
+    <item
+        android:id="@+id/navigation_travel_request"
+        android:icon="@drawable/ic_icon_travel_request"
+        android:title="@string/title_travel_request_" />
+
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/ic_icon_report"
+        android:title="@string/title_report" />
+
+    <!--<item
+        android:id="@+id/navigation_inbox"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_inbox" />-->
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_cash_advance"
+        android:icon="@drawable/ic_icon_cash_advance_status"
+        android:title="@string/title_cash_advance" />
+
+    <item
+        android:id="@+id/menu_travel_request"
+        android:icon="@drawable/ic_icon_travel_request"
+        android:title="@string/title_travel_request_" />
+
+    <item
+        android:id="@+id/menu_expense_reimbursement"
+        android:icon="@drawable/ic_icon_expense_reimbursement"
+        android:title="@string/title_expense_reimnbursement" />
+
+</menu>

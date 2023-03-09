@@ -1,0 +1,466 @@
+<resources>
+    <string name="app_name" translatable="false">AtoCash</string>
+    <string name="app_local_db" translatable="false">atocash-local-db</string>
+
+    <string name="default_notification_channel_id">Normal Notifications</string>
+    <string name="cannot_share_app">Cannot share…</string>
+    <string name="loading">Loading…</string>
+    <string name="enter_user_name">Enter User Name</string>
+    <string name="enter_password">Enter password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="welcome_to_atocash">Welcome to AtoCash,</string>
+    <string name="login">Login</string>
+    <string name="no_notifications_found">No notifications found!</string>
+    <string name="title_activity_admin_main" translatable="false">AdminMainActivity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="enter_valid_user_name">Username invalid!</string>
+    <string name="enter_valid_password">Enter valid password!</string>
+    <string name="title_activity_employee_main" translatable="false">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="enter_email_to_reset_your_password">Enter email to reset your password</string>
+    <string name="submit">Submit</string>
+    <string name="enter_email">Email</string>
+    <string name="menu_cost_center">Cost Center</string>
+    <string name="menu_department">Department</string>
+    <string name="menu_employee">Employee</string>
+    <string name="menu_roles">Job Roles</string>
+    <string name="menu_approval_level">Approval Level</string>
+    <string name="menu_approval_strategy">Approval Strategy</string>
+    <string name="menu_project">Project</string>
+    <string name="menu_sub_project">Sub Project</string>
+    <string name="menu_task">Task</string>
+    <string name="menu_reset_password">Reset Password</string>
+    <string name="open_drawer" translatable="false">Open Drawer</string>
+    <string name="close_drawer" translatable="false">Close Drawer</string>
+    <string name="press_again_exit">Press BACK again to exit!</string>
+    <string name="account">Account</string>
+    <string name="title_expense">Expense</string>
+    <string name="title_advance">Advance</string>
+    <string name="title_inbox">Inbox</string>
+    <string name="title_report">Report</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="no_cost_centers">No Cost centers available!</string>
+    <string name="no_user_roles_avail">No User Roles available!</string>
+    <string name="no_job_roles_avail">No Job Roles available!</string>
+    <string name="manage_cost_center">Manage Cost Center</string>
+    <string name="hint_code">Code</string>
+    <string name="hint_description">Description</string>
+    <string name="btn_create">Create</string>
+    <string name="btn_back">Back</string>
+    <string name="err_enter_cost_center_code">Enter cost center code!</string>
+    <string name="err_enter_cost_center_desc">Enter description!</string>
+    <string name="wallet_balance">Wallet Balance: </string>
+    <string name="pending">Pending</string>
+    <string name="advance">Advance</string>
+    <string name="rejected">Rejected</string>
+    <string name="approved">Approved</string>
+    <string name="submitted">Submitted</string>
+    <string name="no_expense_data_available">No expense data available!</string>
+    <string name="no_expense_type_available">No expense type available!</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="hint_cost_center">Cost Center</string>
+    <string name="job_roles">Job Roles</string>
+    <string name="menu_job_roles">Job Roles</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_user_name">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+    <string name="to_recover_your_password_you_need_to_enter_your_registered_email_we_will_send_a_link_to_reset_your_password">To recover your password, you need to enter your registered email. We will send a link to reset your password</string>
+    <string name="manage_approval">Manage Approval</string>
+    <string name="title_level">Level</string>
+    <string name="title_groups">Groups</string>
+    <string name="title_role_map">Role Map</string>
+    <string name="title_status">Status</string>
+    <string name="menu_employee_type">Employment Types</string>
+    <string name="menu_expense_type">Expense Type</string>
+    <string name="menu_users">Users</string>
+    <string name="menu_user_roles">User Roles</string>
+    <string name="menu_assign_roles">Assign Roles</string>
+    <string name="menu_assign_project">Assign Project</string>
+    <string name="advance_id">"Advance ID : "</string>
+    <string name="title_pending">Pending</string>
+    <string name="add_expense">Add expense</string>
+    <string name="manage_expense">Manage Expenses</string>
+    <string name="manage_advance">Manage Advance</string>
+    <string name="hint_advance_amount">Advance Amount</string>
+    <string name="enable_project">Enable Project</string>
+    <string name="hint_sub_project">Sub Project</string>
+    <string name="hint_project">Project</string>
+    <string name="hint_task">Task</string>
+    <string name="from">From</string>
+    <string name="hint_from">From : </string>
+    <string name="hint_to">To : </string>
+    <string name="hint_purpose">Purpose : </string>
+    <string name="hint_amount">Amount : </string>
+    <string name="title_travel_request">Travel Request</string>
+    <string name="title_travel">Travel</string>
+    <string name="title_travel_request_">Travel Request</string>
+    <string name="manage_travel_request">Manage Travel Request</string>
+    <string name="title_help_support"><![CDATA[Help & Support]]></string>
+    <string name="title_logout">Logout</string>
+    <string name="btn_assign">Assign</string>
+    <string name="hint_employee">Employee</string>
+    <string name="hint_user">User</string>
+    <string name="hint_role">Role</string>
+    <string name="hint_user_role">User Role</string>
+    <string name="hint_user_name_">Username</string>
+    <string name="hint_project_manager">Project Manager</string>
+    <string name="manage_sub_projects">Manage Sub Project</string>
+    <string name="manage_projects">Manage Projects</string>
+    <string name="no_tasks_available">No tasks added yet!</string>
+    <string name="manage_tasks">Manage Tasks</string>
+    <string name="manage_user_roles">Manage User Roles</string>
+    <string name="manage_users">Manage users</string>
+    <string name="manage_employee">Manage Employee</string>
+    <string name="manage_employement_type">Manage Employement Type</string>
+    <string name="hint_national_id">National ID</string>
+    <string name="hint_passport_no">Passport No</string>
+    <string name="hint_tax_no">Tax No</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="hint_nationality">Nationality</string>
+    <string name="hint_date_joined">Date Joined</string>
+    <string name="hint_date_of_birth">Date Of Birth</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_approval_group">Approval Group</string>
+    <string name="hint_employment_type">Employment Type</string>
+    <string name="hint_department">Department</string>
+    <string name="hint_status">Status</string>
+    <string name="no_data_avail">No data available!</string>
+    <string name="manage_approval_level">Manage Approval Level</string>
+    <string name="manage_approval_group">Manage Approval Group</string>
+    <string name="manage_approval_role_map">Manage Role Map</string>
+    <string name="manage_approval_status">Manage Status</string>
+    <string name="hint_level">Level</string>
+    <string name="hint_group">Group</string>
+    <string name="no_projects_avail">No Projects available!</string>
+    <string name="cost_center_status">Cost Center Status</string>
+    <string name="err_department_code">Enter department code!</string>
+    <string name="err_enter_department_name">Enter department name!</string>
+    <string name="err_choose_cost_center">Choose cost center!</string>
+    <string name="check_internet">Check your internet connection!</string>
+    <string name="err_enter_name">Enter name</string>
+    <string name="err_choose_project">Choose Project</string>
+    <string name="err_choose_project_manager">Choose project manager</string>
+    <string name="err_choose_status">Choose status</string>
+    <string name="btn_update">Update</string>
+    <string name="deleting">Deleting…</string>
+    <string name="deleting_records">Deleting records…</string>
+    <string name="info_cost_center_deleted_fail">Failed to delete cost center!</string>
+    <string name="info_cost_center_deleted_success">Cost center deleted successfully!</string>
+    <string name="err_cannot_delete_cost_center">Cost center already in use, cannot delete!</string>
+    <string name="updating">Updating…</string>
+    <string name="creating_cost_center">Creating cost center....</string>
+    <string name="updating_cost_center">Updating cost center…</string>
+    <string name="no_sub_projects_avail">No SubProjects available!</string>
+    <string name="no_department_avail">No departments available!</string>
+    <string name="no_emp_types_avail">No Employment types available!</string>
+    <string name="no_emp_avail">No Employees available!</string>
+    <string name="no_users_avail">No users available!</string>
+    <string name="info_department_deleted_success">Department deleted successfully!</string>
+    <string name="manage_department">Manage Department</string>
+    <string name="updating_job_roles">Updating job roles…</string>
+    <string name="creating_job_roles">Creating job roles…</string>
+    <string name="info_job_roles_created_success">Job roles created successfully!</string>
+    <string name="info_job_roles_updated_success">Job roles updated successfully!</string>
+    <string name="hint_max_amt">Max. Amount</string>
+    <string name="err_enter_code">Enter code</string>
+    <string name="err_enter_amount">Enter max amount</string>
+    <string name="err_enter_emp_name">Enter employment name</string>
+    <string name="err_enter_emp_desc">Enter employment description</string>
+    <string name="updating_employee_type">Updating employment types…</string>
+    <string name="creating_employee_type">Creating employment types…</string>
+    <string name="info_emp_type_deleted_success">Employment type deleted successfully!</string>
+    <string name="err_cannot_delete_emp_type">Cannot delete employment type!</string>
+    <string name="info_sub_project_deleted_success">Sub project deleted successfully!</string>
+    <string name="err_cannot_delete_sub_project">Cannot delete Sub project!</string>
+    <string name="info_project_deleted_success">Project deleted successfully!</string>
+    <string name="err_cannot_delete_project">Cannot delete project!</string>
+    <string name="err_choose_sub_project">Choose sub project!</string>
+    <string name="err_enter_role_name">Enter role name!</string>
+    <string name="err_choose_employee">Choose employee!</string>
+    <string name="info_expense_type_deleted_success">Expense type deleted successfully!</string>
+    <string name="err_enter_desc">Enter description</string>
+    <string name="err_enter_emp_email">Enter email!</string>
+    <string name="err_enter_user_name">Enter user name!</string>
+    <string name="err_enter_password">Enter password!</string>
+    <string name="info_user_role_deleted_success">User roles deleted successfully!</string>
+    <string name="err_cannot_delete_user_roles">Cannot delete user roles!</string>
+    <string name="no_approval_data_available">No approval data available!</string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_middle_name">Middle name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_emp_code">Emp. code</string>
+    <string name="hint_bank_account">Bank Account</string>
+    <string name="hint_bank_card">Bank card no.</string>
+    <string name="hint_currency">Currency</string>
+    <string name="err_choose_currency">Choose currency!</string>
+    <string name="err_choose_department">Choose department!</string>
+    <string name="err_choose_employment_type">Choose employment type!</string>
+    <string name="err_choose_role">Choose role!</string>
+    <string name="err_choose_approval_group">Choose approval group!</string>
+    <string name="err_choose_gender">Choose gender!</string>
+    <string name="err_choose_date_joined">Choose date joined!</string>
+    <string name="err_choose_date_of_birth">Choose date of birth!</string>
+    <string name="err_choose_nationality">Choose nationality!</string>
+    <string name="err_enter_mobile">Enter mobile number!</string>
+    <string name="err_enter_email">Enter email!</string>
+    <string name="err_enter_national_id">Enter national ID</string>
+    <string name="err_enter_bank_card_no">Enter bank card number!</string>
+    <string name="err_enter_bank_account">Enter bank account!</string>
+    <string name="err_enter_emp_code">Enter employee code!</string>
+    <string name="err_enter_last_name">Enter last name!</string>
+    <string name="err_enter_first_name">Enter first name!</string>
+    <string name="err_enter_group">Enter group!</string>
+    <string name="err_enter_group_desc">Enter group description!</string>
+    <string name="err_enter_level">Enter level!</string>
+    <string name="err_enter_level_desc">Enter level description!</string>
+    <string name="err_enter_status">Enter status!</string>
+    <string name="err_enter_status_desc">Enter status description!</string>
+    <string name="err_choose_level">Choose level!</string>
+    <string name="err_choose_group">Choose Group!</string>
+    <string name="creating_group">Creating group…</string>
+    <string name="updating_group">Updating group…</string>
+    <string name="updating_level">Updating level…</string>
+    <string name="creating_level">Creating level</string>
+    <string name="updating_roles">Updating roles…</string>
+    <string name="creating_roles">Creating roles…</string>
+    <string name="updating_status">Updating status…</string>
+    <string name="creating_status">Creating status…</string>
+    <string name="manage_currency">Manage Currency</string>
+    <string name="hint_country">Country</string>
+    <string name="menu_currency">Currency</string>
+    <string name="info_currency_delete_success">Currency deleted successfully!</string>
+    <string name="err_cannot_delete_currency">Cannot delete currency!</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_cash_advance">Cash Advance</string>
+    <string name="title_cash">Cash</string>
+    <string name="err_choose_user">Choose user</string>
+    <string name="updating_currency">Updating currency…</string>
+    <string name="creating_currency">Creating currency…</string>
+    <string name="err_choose_country">Choose country!</string>
+    <string name="no_data_available">No data available!</string>
+    <string name="info_cash_request_deleted_success">Cash request deleted success!</string>
+    <string name="err_cannot_delete_cash_request">Cannot delete cash request!</string>
+    <string name="manage_cash_request">Manage cash request</string>
+    <string name="title_expense_reimnbursement">Expense Reimburse</string>
+    <string name="updating_cash_request">Updating cash request…</string>
+    <string name="creating_cash_request">Creating cash request…</string>
+    <string name="err_enter_valid_bank_account">Account number should be 10 digits</string>
+    <string name="err_enter_bank_card_no_valid">Card number should have 16 digits!</string>
+    <string name="hint_bank_account_no">Bank account no.</string>
+    <string name="manage_expense_reimburse">Manage expense reimburse</string>
+    <string name="next">Next</string>
+    <string name="title_expense_reimnbursement_inititalization">Expense Reimbursement Initialization</string>
+    <string name="hint_expense_title">Expense Title</string>
+    <string name="btn_reject">Reject</string>
+    <string name="btn_approve">Approve</string>
+    <string name="no_req_selected">No request selected!</string>
+    <string name="reject_title">Are you sure you want to reject?</string>
+    <string name="hint_comment">Comment</string>
+    <string name="ok">OK</string>
+    <string name="hint_expense">Expense</string>
+    <string name="hint_invoice_no">Invoice no.</string>
+    <string name="hint_invoice_date">Invoice Date</string>
+    <string name="hint_expense_amt">Expense amount</string>
+    <string name="hint_vendor">Vendor</string>
+    <string name="hint_tax">Tax%</string>
+    <string name="hint_tax_amount">Tax amount</string>
+    <string name="hint_location">Location</string>
+    <string name="hint_desc">Description</string>
+    <string name="hint_document">Document</string>
+    <string name="cash_advance_approved_successfully">Cash advance(s) approved successfully!</string>
+    <string name="exp_reimburse_approved_successfully">Expense reimbursement(s) approved successfully!</string>
+    <string name="travel_request_approved_successfully">Travel request(s) approved successfully!</string>
+    <string name="cash_advance_rejected_successfully">Cash advance(s) rejected!</string>
+    <string name="expense_reimburse_rejected_successfully">Expense reimburse(s) rejected!</string>
+    <string name="travel_request_rejected_successfully">Travel request(s) rejected successfully!</string>
+    <string name="menu_inbox">Inbox</string>
+    <string name="title_my_inbox">My Inbox</string>
+    <string name="cash_advance_details">Cash Advance Details</string>
+    <string name="id">Id:</string>
+    <string name="department">Department: </string>
+    <string name="current_status">Current Status: </string>
+    <string name="advance_amount">Advance Amount: </string>
+    <string name="req_date">Requested Date:</string>
+    <string name="status_">Status :</string>
+    <string name="amount_">Amount :</string>
+    <string name="date_">Date:</string>
+    <string name="emp_">Employee:</string>
+    <string name="desc_">Description:</string>
+    <string name="menu_report">Reports</string>
+    <string name="track_status">Track status</string>
+    <string name="cash_advance">Cash Advance</string>
+    <string name="expense_reimburse">Expense Reimburse</string>
+    <string name="travel_request">Travel Request</string>
+    <string name="rupee_indian">INR</string>
+    <string name="err_choose_task">Choose task!</string>
+    <string name="err_enter_expense_title">Enter title!</string>
+    <string name="loading_expense_reimburse">loading expenses…</string>
+    <string name="expense_reimburse_details">Expense Reimbursement Details</string>
+    <string name="expense_type">Expense Type: </string>
+    <string name="btn_save">Save</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_udpate_expense_method">Update Expense Method</string>
+    <string name="btn_add_new">Add New</string>
+    <string name="type">Type: </string>
+    <string name="choose_expense">Choose expense!</string>
+    <string name="enter_invoice_no">Enter invoice number!</string>
+    <string name="pick_invoice_date">Choose invoice date!</string>
+    <string name="enter_vendor">Enter vendor!</string>
+    <string name="enter_tax">Enter tax</string>
+    <string name="enter_location">Enter location</string>
+    <string name="enter_desc">Enter description</string>
+    <string name="choose_documents">Choose documents!</string>
+    <string name="charge_to">Charge To</string>
+    <string name="sub_claims">Sub claims</string>
+    <string name="total_claim_amt">Total Claim Amount</string>
+    <string name="you_cannot_revert">*You can\'t revert your expenses once you are done with the submission</string>
+    <string name="expense_details">Expense Details </string>
+    <string name="claim_amt">Claim Amount </string>
+    <string name="vendor">Vendor </string>
+    <string name="lang_arabic" translatable="false">Arabic</string>
+    <string name="lang_english" translatable="false">English</string>
+
+    <string name="translate" translatable="false">Translated above strings</string>
+    <!--***************************************************************************************************-->
+
+
+    <string name="title_documents" translatable="false">Attached Invoices:</string>
+    <string name="work_in_progress" translatable="false">Work in progress</string>
+    <string name="hint_start_date" translatable="false">Start Date</string>
+    <string name="hint_end_date" translatable="false">End Date</string>
+    <string name="hint_travel_purpose" translatable="false">Travel Purpose</string>
+    <string name="choose_start_date" translatable="false">Choose start date</string>
+    <string name="choose_end_date" translatable="false">Choose end date</string>
+    <string name="enter_travel_purpose" translatable="false">Enter travel purpose</string>
+    <string name="travel_request_create_success" translatable="false">Travel request created successfully!</string>
+    <string name="travel_request_update_success" translatable="false">Travel request updated successfully!</string>
+    <string name="info_travel_request_deleted_success" translatable="false">Travel request deleted successfully!</string>
+    <string name="travel_request_details" translatable="false">Travel Request details</string>
+    <string name="purpose" translatable="false">Travel Purpose:</string>
+    <string name="added_claims" translatable="false">Added Claims</string>
+    <string name="file_format_not_supported" translatable="false">File format not supported!</string>
+    <string name="welcome" translatable="false">Welcome</string>
+    <string name="title_expense_request" translatable="false">Expense Request</string>
+    <string name="cvv" translatable="false">CVV</string>
+    <string name="cvv_asterik" translatable="false">***</string>
+    <string name="wallet_details" translatable="false">Wallet Details</string>
+    <string name="current_balance" translatable="false">Current Balance</string>
+    <string name="max_limit" translatable="false">Max Limit</string>
+    <string name="on_hand" translatable="false">On Hand</string>
+    <string name="pending_approval" translatable="false">Pending Approval :</string>
+    <string name="pending_settlement" translatable="false">Pending Settlement :</string>
+    <string name="information" translatable="false">Information</string>
+    <string name="currency" translatable="false">Currency :</string>
+    <string name="active" translatable="false">Active</string>
+    <string name="comments" translatable="false">Comments :</string>
+    <string name="bank_credit" translatable="false">Bank Credit :</string>
+    <string name="settlement_status" translatable="false">Settlement Status :</string>
+    <string name="action_settled" translatable="false">Settled</string>
+    <string name="action_un_settled" translatable="false">Unsettled</string>
+    <string name="sub_project" translatable="false">Sub Project :</string>
+    <string name="work_task" translatable="false">Work Task :</string>
+    <string name="success_cash_advance_udpate" translatable="false">Cash request updated successfully!</string>
+    <string name="success_cash_advance_created" translatable="false">Cash request created successfully!</string>
+    <string name="choose_language" translatable="false">Choose Language</string>
+    <string name="cont" translatable="false">Continue</string>
+
+    <string name="ask_and_logout" translatable="false">Are you sure you want to logout?</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="no" translatable="false">No</string>
+    <string name="no_roles_found" translatable="false">No roles found for this login!</string>
+    <string name="cont_with_sub_domain" translatable="false">Continue to login with subdomain server?</string>
+    <string name="choose_server" translatable="false">Choose server</string>
+    <string name="login_success" translatable="false">Logged in successfully!</string>
+    <string name="ask_to_delete" translatable="false">Are you sure you want to delete?</string>
+    <string name="session_expired" translatable="false">Your session has been expired, login again!</string>
+    <string name="department_updated_success" translatable="false">Department Updated successfully!</string>
+    <string name="department_created_success" translatable="false">Department created successfully!</string>
+    <string name="cash_allowed" translatable="false">"Cash Allowed: "</string>
+    <string name="em_type_created" translatable="false">Employment type created successfully!</string>
+    <string name="em_type_updated" translatable="false">Employment type created successfully!</string>
+    <string name="emp_updated_success" translatable="false">Employee updated successfully!</string>
+    <string name="emp_created_success" translatable="false">Employee type created successfully!</string>
+    <string name="group_updated_success" translatable="false">Group updated successfully!</string>
+    <string name="group_created_success" translatable="false">Group created successfully!</string>
+    <string name="level_updated_success" translatable="false">Level updated successfully!</string>
+    <string name="level_created_success" translatable="false">Level created successfully!</string>
+    <string name="role_map_updated_success" translatable="false">RoleMap updated successfully!</string>
+    <string name="role_map_created_success" translatable="false">RoleMap created successfully!</string>
+    <string name="status_updated_success" translatable="false">Status updated successfully!</string>
+    <string name="status_created_success" translatable="false">Status created successfully!</string>
+    <string name="approval_level_deleted_success" translatable="false">Approval level deleted successfully</string>
+    <string name="cannot_delete_approval_level" translatable="false">Cannot delete approval level</string>
+    <string name="appoval_group_deleted_success" translatable="false">Approval Group deleted successfully!</string>
+    <string name="cannot_delete_approval_group" translatable="false">Cannot delete approval group</string>
+    <string name="role_map_deleted_success" translatable="false">Rolemap deleted successfully!</string>
+    <string name="role_map_cannot_delete" translatable="false">Role map cannot be deleted</string>
+    <string name="status_deleted_success" translatable="false">Status deleted successfully!</string>
+    <string name="status_deleted_failed" translatable="false">Status cannot be deleted</string>
+    <string name="emp_deleted_success" translatable="false">Employee deleted successfully!</string>
+    <string name="emp_deleted_failed" translatable="false">Cannot delete employee!</string>
+    <string name="project_updated_success" translatable="false">Project Updated successfully!</string>
+    <string name="project_create_success" translatable="false">Project created successfully!</string>
+    <string name="sub_project_update_success" translatable="false">Sub project updated successfully!</string>
+    <string name="sub_project_delete_success" translatable="false">Sub Project created successfully!</string>
+    <string name="task_created_success" translatable="false">Task created successfully!</string>
+    <string name="task_updated_success" translatable="false">Task Updated successfully!</string>
+    <string name="user_updated_success" translatable="false">User Updated successfully!</string>
+    <string name="user_created_success" translatable="false">User Created successfully!</string>
+    <string name="user_role_created_success" translatable="false">User role created successfully!</string>
+    <string name="user_role_updates_success" translatable="false">User role updated successfully!</string>
+    <string name="roles_assigned_success" translatable="false">Roles assigned successfully!</string>
+    <string name="project_assigned_success" translatable="false">Project assigned successfully!</string>
+    <string name="tax_must_be_under_100" translatable="false">Tax must be under 100 percent</string>
+    <string name="info_travel_request_deleted_fail" translatable="false">Unable to delete travel request!</string>
+    <string name="add_claims_before_saving" translatable="false">Add claims before saving!</string>
+    <string name="expense_saved_success" translatable="false">Expense reimbursement saved successfully!</string>
+    <string name="expense_update_success" translatable="false">Expense reimbursement updated successfully!</string>
+    <string name="pending_expense_reimbure_details">Pending Expense Reimburse Details</string>
+
+    <string name="expense_for">Expense for</string>
+    <string name="bussiness_area">Business Area</string>
+    <string name="department_">Department</string>
+    <string name="some_error_occurred">Some error occurred, try again later!</string>
+    <string name="hint_expense_category">Expense Category</string>
+    <string name="is_vat">Is VAT</string>
+    <string name="hint_start_date_end_date">Start date - End date</string>
+    <string name="hint_no_of_days">No of Days</string>
+    <string name="business_type">Business Type</string>
+    <string name="business_unit">Business Unit</string>
+    <string name="no_business_types_avaialble">No business types available!</string>
+    <string name="no_business_units_avaialble">No business units available!</string>
+    <string name="hint_expense_location">Expense location</string>
+    <string name="hint_other_vendor_name">Other vendor name</string>
+    <string name="hint_claim_amount">Claim amount</string>
+    <string name="inclusive_of_vat">Inclusive of VAT</string>
+    <string name="pending_approval_ca">Pending Approvals CA</string>
+    <string name="pending_settlement_ca">Pending Settlements CA</string>
+    <string name="pending_approval_er">Pending Approval ER</string>
+    <string name="pending_settlement_er">Pending Settlements ER</string>
+    <string name="to_be_adjusted_against_ca">To be adjusted against CA</string>
+    <string name="no_of_docs_attached" translatable="false">%s Document(s) Attached</string>
+
+    <string name="choose_business_type">Choose business type!</string>
+    <string name="choose_business_unit">Choose business unit!</string>
+    <string name="choose_location">Choose location!</string>
+    <string name="please_check_whether_all_the_claims_are_attached_with_at_least_one_document">Please attach at least one Document</string>
+    <string name="choose_expense_category">Choose expense category!</string>
+    <string name="enter_expense_amount">Enter expense amount!</string>
+    <string name="err_enter_tax_no">Enter tax No</string>
+</resources>

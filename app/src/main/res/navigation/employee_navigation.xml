@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.atocash.fragments.employee.home.EmployeeHomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_employee_home" />
+
+    <fragment
+        android:id="@+id/navigation_expense"
+        android:name="com.atocash.common.fragments.expenseReimburse.ExpenseReimbursementFragment"
+        android:label="@string/title_expense"
+        tools:layout="@layout/fragment_expense_reimburse" />
+
+    <fragment
+        android:id="@+id/navigation_advance"
+        android:name="com.atocash.fragments.employee.advance.EmpAdvanceFragment"
+        android:label="@string/title_advance"
+        tools:layout="@layout/fragment_emp_advance" />
+
+    <fragment
+        android:id="@+id/navigation_travel_request"
+        android:name="com.atocash.fragments.employee.travelReq.EmpTravelReqFragment"
+        android:label="@string/title_travel_request_"
+        tools:layout="@layout/fragment_employee_travel_request" />
+
+    <fragment
+        android:id="@+id/navigation_report"
+        android:name="com.atocash.fragments.employee.report.EmployeeReportFragment"
+        android:label="@string/title_report"
+        tools:layout="@layout/fragment_employee_report" />
+
+</navigation>

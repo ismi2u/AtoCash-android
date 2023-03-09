@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.atocash.base.recycler.LoadingVhVm" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/itemLoadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_16sdp"
+        android:visibility="@{safeUnbox(viewModel.isLoading) ? View.VISIBLE : View.GONE}">
+
+        <ProgressBar
+            android:id="@+id/itemLoadingProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</layout>

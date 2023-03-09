@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_level"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_level" />
+
+    <item
+        android:id="@+id/navigation_groups"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_groups" />
+
+    <item
+        android:id="@+id/navigation_role_map"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_role_map" />
+
+    <item
+        android:id="@+id/navigation_status"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_status" />
+
+</menu>

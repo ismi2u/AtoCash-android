@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.atocash.fragments.admin.dashboard.AdminDashboardFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_admin_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.atocash.common.fragments.report.ReportFragment"
+        android:label="@string/menu_report"
+        tools:layout="@layout/fragment_report" />
+
+    <fragment
+        android:id="@+id/nav_cost_center"
+        android:name="com.atocash.fragments.admin.costCenter.CostCenterFragment"
+        android:label="@string/menu_cost_center"
+        tools:layout="@layout/fragment_cost_center" />
+
+    <fragment
+        android:id="@+id/nav_department"
+        android:name="com.atocash.fragments.admin.department.DepartmentFragment"
+        android:label="@string/menu_department"
+        tools:layout="@layout/fragment_department" />
+
+    <fragment
+        android:id="@+id/nav_roles"
+        android:name="com.atocash.fragments.admin.roles.JobRolesFragment"
+        android:label="@string/menu_roles"
+        tools:layout="@layout/fragment_roles" />
+
+    <fragment
+        android:id="@+id/nav_employee_type"
+        android:name="com.atocash.fragments.admin.employmentType.EmployeeTypeFragment"
+        android:label="@string/menu_employee_type"
+        tools:layout="@layout/fragment_employee_type" />
+
+    <fragment
+        android:id="@+id/nav_expense_type"
+        android:name="com.atocash.fragments.admin.expense.ExpenseTypesFragment"
+        android:label="@string/menu_expense_type"
+        tools:layout="@layout/fragment_expense_types" />
+
+    <fragment
+        android:id="@+id/nav_approval_strategy"
+        android:name="com.atocash.fragments.admin.approval.AdminApprovalFragment"
+        android:label="@string/menu_approval_strategy"
+        tools:layout="@layout/fragment_approval" />
+
+    <fragment
+        android:id="@+id/nav_employee"
+        android:name="com.atocash.fragments.admin.employee.EmployeeFragment"
+        android:label="@string/menu_employee"
+        tools:layout="@layout/fragment_employee" />
+
+    <fragment
+        android:id="@+id/nav_project"
+        android:name="com.atocash.fragments.admin.project.ProjectFragment"
+        android:label="@string/menu_project"
+        tools:layout="@layout/fragment_project" />
+
+    <fragment
+        android:id="@+id/nav_sub_project"
+        android:name="com.atocash.fragments.admin.subProject.SubProjectFragment"
+        android:label="@string/menu_sub_project"
+        tools:layout="@layout/fragment_sub_project" />
+
+    <fragment
+        android:id="@+id/nav_task"
+        android:name="com.atocash.fragments.admin.task.TaskFragment"
+        android:label="@string/menu_task"
+        tools:layout="@layout/fragment_task" />
+
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.atocash.fragments.admin.users.UserFragment"
+        android:label="@string/menu_users"
+        tools:layout="@layout/fragment_users" />
+
+    <fragment
+        android:id="@+id/nav_user_roles"
+        android:name="com.atocash.fragments.admin.userRoles.UserRolesFragment"
+        android:label="@string/menu_user_roles"
+        tools:layout="@layout/fragment_user_roles" />
+
+    <fragment
+        android:id="@+id/nav_currency"
+        android:name="com.atocash.fragments.admin.currency.CurrencyFragment"
+        android:label="@string/menu_currency"
+        tools:layout="@layout/fragment_currency" />
+
+    <fragment
+        android:id="@+id/nav_assign_roles"
+        android:name="com.atocash.fragments.admin.assignRoles.AssignRolesFragment"
+        android:label="@string/menu_assign_roles"
+        tools:layout="@layout/fragment_assign_roles" />
+
+    <fragment
+        android:id="@+id/nav_assign_project"
+        android:name="com.atocash.fragments.admin.assignProject.AssignProjectFragment"
+        android:label="@string/menu_assign_project"
+        tools:layout="@layout/fragment_assign_project" />
+
+
+</navigation>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.atocash.common.activity.expenseReimburseListing.ExpenseReimburseListingViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".common.activity.expenseReimburseListing.ExpenseReimburseListingActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/listing_tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/AppBaseTheme.AppBarOverlay"
+            app:elevation="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize">
+
+                    <ImageView
+                        android:id="@+id/back_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="1dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@null"
+                        android:padding="@dimen/_12sdp"
+                        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                    <TextView
+                        android:id="@+id/tool_tv"
+                        style="@style/TextHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/back_iv"
+                        android:textSize="@dimen/_16sdp"
+                        tools:text="@string/app_name" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextContentStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:gravity="end"
+                            android:text="@string/charge_to" />
+
+                        <TextView
+                            android:id="@+id/type_tv"
+                            style="@style/TextTitleStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            tools:text="Department" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextContentStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:gravity="end|center_vertical"
+                            android:text="@string/amount_" />
+
+                        <TextView
+                            android:id="@+id/claim_amount_tv"
+                            style="@style/TextTitleStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="start|center_vertical"
+                            tools:text="1000" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/header_btn_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_6sdp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/update_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@drawable/negative_btn_edged_bg"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:text="@string/btn_udpate_expense_method"
+                        android:textAllCaps="false"
+                        android:textColor="@color/btn_positive"
+                        app:elevation="@dimen/_6sdp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/add_new_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/positive_btn_edged_bg"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:onClick="@{()->viewModel.onAddNew()}"
+                        android:text="@string/btn_add_new"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:elevation="@dimen/_6sdp" />
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/view_top_bar_drop_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/horizontal_drop_shadow_size" />
+
+            </LinearLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listing_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_100sdp"
+            android:visibility="@{safeUnbox(viewModel.isLoading()) ? View.GONE : View.VISIBLE }"
+            app:layout_constraintBottom_toTopOf="@+id/expense_listing_footer"
+            app:layout_constraintTop_toBottomOf="@+id/listing_tool"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_expense_reimburse_listing" />
+
+        <ProgressBar
+            android:id="@+id/listing_progress"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerInParent="true"
+            android:visibility="@{safeUnbox(viewModel.isLoading()) ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/expense_listing_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible">
+
+            <View
+                android:id="@+id/top_bar_drop_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/horizontal_drop_shadow_size"
+                android:background="@drawable/drop_shadow_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/btn_grp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_6sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/save_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/negative_btn_edged_bg"
+                    android:fontFamily="@font/googlesans_bold"
+                    android:onClick="@{()->viewModel.onSave()}"
+                    android:text="@string/btn_save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_positive"
+                    app:elevation="@dimen/_6sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/submit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/positive_btn_edged_bg"
+                    android:fontFamily="@font/googlesans_bold"
+                    android:onClick="@{()->viewModel.onSubmit()}"
+                    android:text="@string/btn_submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:elevation="@dimen/_6sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/logoutContent"
+        style="@style/TextHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/googlesans_regular"
+        android:gravity="start"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/wallet_details"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/tab_shadow" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_4sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@drawable/card_gradient_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:background="@drawable/circle_white_bg"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@drawable/circle_white_bg"
+                    android:contentDescription="@null" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cardNumTv"
+                style="@style/TextHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/google_sans"
+                android:textColor="@color/white_transparent"
+                android:textSize="@dimen/_20sdp"
+                tools:text="2134 5443 2132 4545" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/google_sans"
+                    android:text="@string/cvv"
+                    android:textColor="@color/white_transparent"
+                    android:textSize="@dimen/_16sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/google_sans"
+                    android:gravity="center_vertical"
+                    android:text="@string/cvv_asterik"
+                    android:textColor="@color/white_transparent"
+                    android:textSize="@dimen/_16sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:fontFamily="@font/googlesans_regular"
+                android:gravity="start|center_vertical"
+                android:text="@string/current_balance"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <TextView
+                android:id="@+id/currentBalanceTv"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="end|center_vertical"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                tools:text="49995480.00" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:fontFamily="@font/googlesans_regular"
+                android:gravity="start|center_vertical"
+                android:text="@string/max_limit"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <TextView
+                android:id="@+id/maxLimitTv"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="end|center_vertical"
+                android:textSize="@dimen/_14sdp"
+                tools:text="50000.00" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:fontFamily="@font/googlesans_regular"
+                android:gravity="start|center_vertical"
+                android:text="@string/on_hand"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <TextView
+                android:id="@+id/onHandTv"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="end|center_vertical"
+                android:textSize="@dimen/_14sdp"
+                tools:text="3456.50" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:fontFamily="@font/googlesans_regular"
+                android:gravity="start|center_vertical"
+                android:text="@string/pending_approval_ca"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <TextView
+                android:id="@+id/pendingApprovalTv"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="end|center_vertical"
+                android:textSize="@dimen/_14sdp"
+                tools:text="13332.00" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:fontFamily="@font/googlesans_regular"
+                android:gravity="start|center_vertical"
+                android:text="@string/pending_settlement_ca"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/pendingSettlementTv"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="end|center_vertical"
+                android:textSize="@dimen/_14sdp"
+                tools:text="0.00" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/icon_grey" />
+
+        <TableRow
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:fontFamily="@font/googlesans_regular"
+                android:gravity="start|center_vertical"
+                android:text="@string/pending_approval_er"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvPendingApprovalER"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="end|center_vertical"
+                android:textSize="@dimen/_14sdp"
+                tools:text="0.00" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:fontFamily="@font/googlesans_regular"
+                android:gravity="start|center_vertical"
+                android:text="@string/pending_settlement_er"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvPendingSettlementER"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="end|center_vertical"
+                android:textSize="@dimen/_14sdp"
+                tools:text="0.00" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:fontFamily="@font/googlesans_regular"
+                android:gravity="start|center_vertical"
+                android:text="@string/to_be_adjusted_against_ca"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvAdjustedCA"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="end|center_vertical"
+                android:textSize="@dimen/_14sdp"
+                tools:text="0.00" />
+
+        </TableRow>
+
+        <TextView
+            style="@style/TextHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="start|center_vertical"
+            android:text="@string/information"
+            android:textSize="@dimen/_15sdp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:fontFamily="@font/googlesans_regular"
+                android:gravity="start|center_vertical"
+                android:text="@string/status_"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/statusTv"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="end|center_vertical"
+                android:text="@string/active"
+                android:textSize="@dimen/_12sdp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_26sdp"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:fontFamily="@font/googlesans_regular"
+                android:gravity="start|center_vertical"
+                android:text="@string/currency"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/currencyTv"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="end|center_vertical"
+                android:textSize="@dimen/_12sdp"
+                tools:text="AED" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

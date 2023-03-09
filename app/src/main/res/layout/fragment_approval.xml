@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.atocash.fragments.admin.approval.AdminApprovalViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.nambimobile.widgets.efab.ExpandableFabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.atocash.customViews.NoSwipeViewPager
+                android:id="@+id/approval_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/approval_bottom_nav"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.nambimobile.widgets.efab.Overlay
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:overlay_alpha="0.75"
+                app:overlay_color="@color/scrim_img_bg"
+                app:overlay_openingAnimationDurationMs="1000" />
+
+            <com.nambimobile.widgets.efab.ExpandableFab
+                android:id="@+id/expandable_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_60sdp"
+                app:efab_closingAnticipateTension="0"
+                app:efab_color="@color/appSecondary"
+                app:efab_icon="@drawable/ic_baseline_add_24"
+                app:efab_iconAnimationRotationDeg="-225"
+                app:efab_orientation="portrait" />
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->viewModel.onCreateLevel()}"
+                app:fab_color="@color/cardBg2"
+                app:fab_icon="@drawable/ic_dashboard_black_24dp"
+                app:label_backgroundColor="#808080"
+                app:label_text="Create Level"
+                app:label_textColor="@color/white" />
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="@color/cardBg2"
+                app:fab_icon="@drawable/ic_dashboard_black_24dp"
+                app:label_backgroundColor="#808080"
+                app:label_text="Create Groups"
+                android:onClick="@{()->viewModel.onCreateGroup()}"
+                app:label_textColor="@color/white" />
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="@color/cardBg2"
+                app:fab_icon="@drawable/ic_dashboard_black_24dp"
+                app:label_backgroundColor="#808080"
+                app:label_text="Create RoleMap"
+                android:onClick="@{()->viewModel.onCreateRoleMap()}"
+                app:label_textColor="@color/white" />
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="@color/cardBg2"
+                app:fab_icon="@drawable/ic_dashboard_black_24dp"
+                app:label_backgroundColor="#808080"
+                app:label_text="Create Status"
+                android:onClick="@{()->viewModel.onCreateStatus()}"
+                app:label_textColor="@color/white" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/approval_bottom_nav"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_gravity="bottom"
+                android:background="?android:attr/windowBackground"
+                app:labelVisibilityMode="labeled"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:menu="@menu/approval_nav_menu" />
+
+        </com.nambimobile.widgets.efab.ExpandableFabLayout>
+
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_approval_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@color/colorPrimaryDark"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_baseline_add_24"
+            app:tint="@null" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

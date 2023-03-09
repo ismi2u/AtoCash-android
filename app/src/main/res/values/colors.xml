@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appPrimary">#EA43A6</color>
+    <color name="appSecondary">#5965D6</color>
+
+    <color name="cardBg1">#C57231F6</color>
+    <color name="cardBg2">#BE8B2BE3</color>
+    <color name="cardBg3">#BABC1EBF</color>
+    <color name="cardBg4">#B5D417AC</color>
+
+    <color name="gradientStart">#C31CBE</color>
+    <color name="gradientEnd">#862BE7</color>
+
+    <color name="colorPrimary">@color/appSecondary</color>
+    <color name="colorPrimaryDark">#BABABA</color>
+    <color name="colorAccent">@color/appPrimary</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_transparent">#DBFFFFFF</color>
+
+    <color name="nav_bg">#001529</color>
+
+    <color name="layout_bg">#F3F3F3</color>
+    <color name="grey">#F6F1F0F0</color>
+    <color name="silver">#C0C0C0</color>
+
+    <color name="light_ripple">@color/silver</color>
+    <color name="app_ripple">@color/purple_200</color>
+
+    <color name="scrim">#A7000000</color>
+    <color name="scrim_img_bg">#AAA6A6</color>
+    <color name="scrim_white">#B3FFFFFF</color>
+
+    <color name="text_black">@color/app_theme_dark</color>
+    <color name="text_grey">#ECC6C3C3</color>
+    <color name="icon_grey">#ECB8B3B3</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <color name="btn_positive">#3DA7FF</color>
+
+    <color name="gmail_bg">#E05B50</color>
+    <color name="fb_bg">#5B86E7</color>
+    <color name="sky_blue">#1E88E5</color>
+    <color name="otp_bg">#4AC66B</color>
+
+    <color name="pending">#D9A1A2A1</color>
+    <color name="advance">#D0FDD835</color>
+    <color name="rejected">#C9E53935</color>
+    <color name="approved">#D543A047</color>
+
+    <color name="transparent">#80000000</color>
+    <color name="btn_text">@color/appSecondary</color>
+
+    <color name="horizontal_drop_shadow_end_color">#15000000</color>
+
+    <color name="status_approved">#27DC9B</color>
+    <color name="status_pending">#F5C23D</color>
+    <color name="status_rejected">#ED432B</color>
+
+    <color name="card_1">#5FA9B0</color>
+    <color name="card_2">#86BBAB</color>
+    <color name="card_3">#3D8FD4</color>
+    <color name="card_4">#EE6AA9</color>
+    <color name="card_pink">#F20074</color>
+    <color name="app_theme_dark">#02101E</color>
+
+    <color name="wallet_card_end">#307FFF</color>
+    <color name="wallet_card_start">#3160FF</color>
+
+</resources>

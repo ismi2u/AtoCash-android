@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.atocash.activities.language.ChooseLanguageViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:src="@drawable/app_icon"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="-30dp"
+                app:cardCornerRadius="@dimen/_30sdp"
+                app:cardElevation="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|top"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_28sdp">
+
+                    <TextView
+                        android:id="@+id/welcome_txt"
+                        style="@style/TextHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="start"
+                        android:text="@string/choose_language"
+                        android:textColor="@color/appPrimary"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <RadioGroup
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbEng"
+                            android:text="@string/lang_english"
+                            android:padding="@dimen/_10sdp"
+                            android:fontFamily="@font/googlesans_medium"
+                            android:drawablePadding="@dimen/_20sdp"
+                            app:buttonTint="@color/appPrimary"
+                            android:layout_width="match_parent"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbArab"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/lang_arabic"
+                            android:padding="@dimen/_10sdp"
+                            android:fontFamily="@font/googlesans_medium"
+                            android:drawablePadding="@dimen/_20sdp"
+                            app:buttonTint="@color/appPrimary"
+                            android:layout_width="match_parent"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_height="wrap_content"/>
+
+                    </RadioGroup>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cont_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/positive_btn_edged_bg"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:onClick="@{()->viewModel.onContinueClick()}"
+                        android:text="@string/cont"
+                        android:textColor="@color/white"
+                        app:elevation="@dimen/_6sdp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
