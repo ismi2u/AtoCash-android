@@ -486,7 +486,7 @@ class ExpenseReimburseListingActivity :
 
         expenseClaimDto.businessTypeId = expenseInitData?.businessTypeId
         expenseClaimDto.businessUnitId = expenseInitData?.businessUnitId
-        expenseClaimDto.currencyTypeId = expenseInitData?.currencyId
+        expenseClaimDto.currencyTypeId = dataStorage.getInt(Keys.UserData.CURRENCY_ID)
 
         expenseClaimDto.expenseReportTitle = expenseInitData?.expenseTitle
         expenseClaimDto.projectId =
@@ -506,7 +506,6 @@ class ExpenseReimburseListingActivity :
             if(expenseClaimDto.businessTypeId == null) {
                 expenseClaimDto.businessTypeId = item.businessTypeId
                 expenseClaimDto.businessUnitId = item.businessUnitId
-                expenseClaimDto.currencyTypeId = item.currencyTypeId
             }
 
             subClaimDto.invoiceNo = item.invoiceNo
